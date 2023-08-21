@@ -4,7 +4,10 @@ console.log('It Works!')
 const cardButtons = document.querySelectorAll('.card button');
 // console.log(cardButtons);
 
-//Selecting modal
+//Selecting modal outer
+const modalOuter = document.querySelector('.modal-outer');
+// console.log(modalOuter)
+//Selecting modal inner
 const modalInner = document.querySelector('.modal-inner');
 // console.log(modalInner);
 
@@ -23,7 +26,9 @@ function handleCardButtonClick() {
     `
     <img src="${imgSrc.replace('200', '600')}" alt="${name}"/>
     <p>${desc}</p>
-    `
+    `;
+    //Show the modal
+
 }
 //Looping over the card buttons and adding an event listener
 cardButtons.forEach(button => button.addEventListener('click', handleCardButtonClick));
