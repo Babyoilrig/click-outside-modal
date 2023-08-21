@@ -28,7 +28,7 @@ function handleCardButtonClick() {
     <p>${desc}</p>
     `;
     //Show the modal
-
+modalOuter.classList.add('open');
 }
 //Looping over the card buttons and adding an event listener
 cardButtons.forEach(button => button.addEventListener('click', handleCardButtonClick));
