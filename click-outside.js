@@ -40,6 +40,8 @@ function closeModal() {
 }
 
 modalOuter.addEventListener('click', function(e) {
-   const isOutside = e.target.closest('.modal-inner');
-   console.log(isOutside);
+   const isOutside = !e.target.closest('.modal-inner');
+   if (isOutside) {
+    modalOuter.classList.remove('open');
+   }
 })
