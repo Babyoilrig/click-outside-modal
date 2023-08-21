@@ -12,12 +12,12 @@
   <div class="cards">
     <div class="card" data-description="Cat is cool">
       <img src="https://picsum.photos/200?random=2" alt="Cat M">
-      <h2>Cat Mentzoni</h2>
+      <h2>Catrin Mentzoni</h2>
       <button>Learn more →</button>
     </div>
     <div class="card" data-description="Ben is awesome!">
       <img src="https://picsum.photos/200?random=3" alt="Cat M">
-      <h2>Ben Gibody</h2>
+      <h2>Benjamin Gilbody</h2>
       <button>Learn more →</button>
     </div>
     <div class="card" data-description="Martha is amazing!">
@@ -38,6 +38,20 @@
 
     </div>
   </div>
+  <style>
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        padding: 2rem;
+
+    }
+
+    .card img {
+        width: 100%
+    }
+
+  </style>
   <script src="./click-outside.js"></script>
 </body>
 
