@@ -32,3 +32,14 @@ modalOuter.classList.add('open');
 }
 //Looping over the card buttons and adding an event listener
 cardButtons.forEach(button => button.addEventListener('click', handleCardButtonClick));
+
+//Function to close modal
+function closeModal() {
+    modalOuter.classList.remove('open');
+    
+}
+
+modalOuter.addEventListener('click', function(e) {
+   const isOutside = e.target.closest('.modal-inner');
+   console.log(isOutside);
+})
