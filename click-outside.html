@@ -72,9 +72,17 @@
        left: 0;
        justify-content: center;
        align-items: center;
-       /*Beneath is haiding the modal */
+       /*Beneath is haiding the modal  -until we need it */
        opacity: 0;
        pointer-events: none;
+       transition: opacity 0.2s;
+    }
+
+    .modal-outer.open {
+        opacity: 1;
+        pointer-events: all;
+
+
     }
 
     .modal-inner {
